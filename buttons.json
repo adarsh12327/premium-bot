@@ -1,0 +1,14 @@
+[
+  {
+    "id": "btn_def_1",
+    "text": "Premium demo",
+    "type": "url",
+    "value": "https://t.me/kaplootersbot"
+  },
+  {
+    "id": "btn_def_2",
+    "text": "✅ Payment proof",
+    "type": "url",
+    "value": "https://t.me/paymantproof1"
+  }
+]
