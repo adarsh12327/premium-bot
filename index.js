@@ -2,7 +2,18 @@ const { Telegraf, Markup } = require('telegraf');
 const fs = require('fs');
 const path = require('path');
 require('dotenv').config();
+const express = require('express');
+const app = express();
 
+app.get('/', (req, res) => {
+  res.send('Bot Running');
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
+});
 // Ensure Environment Variables Exist
 if (!process.env.BOT_TOKEN || !process.env.ADMIN_ID) {
   console.error('ERROR: BOT_TOKEN and ADMIN_ID are required in environment variables (.env)');
